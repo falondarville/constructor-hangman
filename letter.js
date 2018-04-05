@@ -1,9 +1,15 @@
-var letter = function(letterGuessed){
-	this.character = letterGuessed;
-	this.appear = false;
-	this.showResult = function(){
-		return !(this.appear) ? "_" : this.character;
+var Letter = function(character){
+	this.character = character.toLowerCase();
+	this.letterCorrect = false;
+	this.showCharacter = function(){
+		if(this.letterCorrect) {
+			console.log(this.character);
+		}
 	};
 };
 
-module.exports = letter;
+// testing, change the letterCorrect variable to true during this process
+// var letter1 = new Letter("b");
+// letter1.showCharacter();
+
+module.exports = Letter;
