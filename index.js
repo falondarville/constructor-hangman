@@ -1,3 +1,6 @@
+var Inquirer = require("inquirer");
+var Word = require("./word");
+var Letter = require("./letter");
 // index.js: The file containing the logic for the course of the game, which depends on Word.js and:
 
 // Randomly selects a word and uses the Word constructor to store it
@@ -6,3 +9,4 @@
 var wordBank = ["asparagus", "carrots", "spinach", "lettuce"];
 var randomWord = Math.floor(Math.random() * wordBank.length);
 var randomArray = wordBank[randomWord];
+
