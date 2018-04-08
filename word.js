@@ -18,7 +18,6 @@ var Word = function(letters) {
 	};
 
 	this.trueCharacter = function(characterGuessed) {
-		console.error('---');
 		for (var i = 0; i < this.letters.length; i++) {
 			this.letters[i].trueCharacter(characterGuessed);
 		}
