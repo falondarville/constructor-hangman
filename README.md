@@ -6,7 +6,7 @@ This is a terminal line hangman game using inquirer. The user tries to guess a h
 
 Since this is a terminal line node application, you will need to have the inquirer npm package installed. You can start the game by typing "node index.js" in your terminal. This will prompt you to choose a letter. 
 
-[!alt-text](game.png)
+![alt-text](game.png)
 
 ## Assignment Challenges
 
