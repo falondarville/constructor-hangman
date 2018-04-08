@@ -12,8 +12,7 @@ var Word = function(letters) {
 	this.show = function() {
 		var letterString = "";
 		for (var i = 0; i < this.letters.length; i++) {
-			var letter = this.letters[i];
-			letterString += letter.showCharacter() + " ";
+			letterString += this.letters[i].showCharacter() + " ";
 		}
 		return console.log(letterString);
 	};
