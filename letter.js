@@ -6,7 +6,7 @@
 // A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
 
 var Letter = function(character){
-	this.character = character.toLowerCase();
+	this.character = character;
 	this.letterCorrect = false;
 	this.showCharacter = function(){
 		if(this.letterCorrect) {
@@ -15,13 +15,13 @@ var Letter = function(character){
 			return "_";
 		}
 	};
-	this.guessedStatus = function() {
-		return this.guessed;
-	};
 	this.trueCharacter = function(guessCharacter){
-		if(guessCharacter == this.letterCorrect) {
+		if(guessCharacter == this.character) {
 			this.letterCorrect = true;
 		}
+	};
+	this.guessedStatus = function() {
+		return this.letterCorrect;
 	};
 };
 

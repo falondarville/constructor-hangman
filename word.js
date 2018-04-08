@@ -8,6 +8,7 @@ var Letter = require("./letter");
 
 var Word = function(letters) {
 	this.letters = letters;
+
 	this.show = function() {
 		var letterString = "";
 		for (var i = 0; i < this.letters.length; i++) {
@@ -16,11 +17,14 @@ var Word = function(letters) {
 		}
 		return console.log(letterString);
 	};
+
 	this.trueCharacter = function(characterGuessed) {
+		console.error('---');
 		for (var i = 0; i < this.letters.length; i++) {
 			this.letters[i].trueCharacter(characterGuessed);
 		}
 	};
+	
 	this.finishedWord = function() {
 		for(var i = 0; i < this.letters.length; i++) {
 			if (!this.letters[i].guessedStatus()) {
