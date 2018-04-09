@@ -1,10 +1,12 @@
 # Contructor Hangman Game
 
-This is a terminal line hangman game using inquirer. The user tries to guess a hidden word and receives feedback from the computer regarding whether or not the guesses are correct. This is a game built during the UC Davis Extension coding bootcamp.
+This is a terminal line hangman game using Inquirer. Inquirer is a Node npm package that allows you to create terminal line prompts. In this game, the user tries to guess a hidden word and receives feedback from the computer regarding whether or not the guesses are correct. 
+
+This is a game built during the UC Davis Extension coding bootcamp (Trilogy Education Services).
 
 ## How to Play
 
-Since this is a terminal line node application, you will need to have the inquirer npm package installed. You can start the game by typing "node index.js" in your terminal. This will prompt you to choose a letter. 
+Since this is a terminal line node application, you will need to have the inquirer npm package installed. You can start the game by typing "node index.js" in your terminal. This will prompt you to choose a letter. Continue choosing letters until you either complete the word or run out of guesses. The following is a screenshot of what the game looks like: 
 
 ![alt-text](game.png)
 
@@ -15,4 +17,4 @@ Since this is a terminal line node application, you will need to have the inquir
 
 ## Technologies Used
 
-Node.js, npm, JavaScript, inquirer npm package
+Node.js, npm, JavaScript including object constructors, inquirer npm package
